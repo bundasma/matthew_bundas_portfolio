@@ -1,0 +1,30 @@
+,intel_image_param_search_0_16,intel_image_param_search_0_17,intel_image_param_search_0_18,intel_image_param_search_0_19,intel_image_param_search_0_20,intel_image_param_search_0_21,intel_image_param_search_0_22,intel_image_param_search_0_23,intel_image_param_search_0_24,intel_image_param_search_0_25,intel_image_param_search_0_26,intel_image_param_search_0_27,intel_image_param_search_0_28,intel_image_param_search_0_29,intel_image_param_search_0_30,intel_image_param_search_0_31
+dbName,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2
+num_trials,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3
+maxIterations,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+numLLEpochs,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20
+fineTuneEpochs,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+numDenseNeurons,512,1024,512,1024,512,1024,512,1024,512,1024,512,1024,512,1024,512,1024
+labelSmoothing,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+dropoutRate,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3
+LLLearningRate,0.01,0.01,0.001,0.001,0.0001,0.0001,1.00E-05,1.00E-05,0.01,0.01,0.001,0.001,0.0001,0.0001,1.00E-05,1.00E-05
+fineTuneLearningRate,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+batchSize,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32
+weightClasses,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+augmentImages,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+useValidation,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+checkpointCriteria,val_categorical_accuracy,val_categorical_accuracy,val_categorical_accuracy,val_categorical_accuracy,val_categorical_accuracy,val_categorical_accuracy,val_categorical_accuracy,val_categorical_accuracy,val_categorical_accuracy,val_categorical_accuracy,val_categorical_accuracy,val_categorical_accuracy,val_categorical_accuracy,val_categorical_accuracy,val_categorical_accuracy,val_categorical_accuracy
+writeFinalModel,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+remoteDB,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+evaluationSize,2500,2500,2500,2500,2500,2500,2500,2500,2500,2500,2500,2500,2500,2500,2500,2500
+TVPoolSize,2000,2000,2000,2000,2000,2000,2000,2000,10000,10000,10000,10000,10000,10000,10000,10000
+validationRatio,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2
+predictionSize,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32
+citizenWeight,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+confidentThreshold,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+numALSamplesPerIter,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+activeLearningLabeler,simulated,simulated,simulated,simulated,simulated,simulated,simulated,simulated,simulated,simulated,simulated,simulated,simulated,simulated,simulated,simulated
+alSelectionCriteria,random,random,random,random,random,random,random,random,random,random,random,random,random,random,random,random
+SSLType,boosted,boosted,boosted,boosted,boosted,boosted,boosted,boosted,boosted,boosted,boosted,boosted,boosted,boosted,boosted,boosted
+classNoise,"[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]"
+classImbalance,"[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]"

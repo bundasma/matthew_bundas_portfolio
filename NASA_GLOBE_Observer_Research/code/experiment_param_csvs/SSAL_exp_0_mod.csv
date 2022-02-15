@@ -1,0 +1,32 @@
+,SSAL_exp_0_mod
+dbName,intel_images_2
+num_trials,3
+maxIterations,10
+numLLEpochs,75
+fineTuneEpochs,0
+numDenseNeurons,512
+labelSmoothing,0.1
+dropoutRate,0.4
+LLLearningRate,1.00E-07
+fineTuneLearningRate,0
+batchSize,32
+weightClasses,TRUE
+augmentImages,FALSE
+useValidation,TRUE
+earlyStoppingPatience,5
+writeFinalModel,FALSE
+modelType,inception
+remoteDB,TRUE
+evaluationSize,2500
+TVPoolSize,1000
+validationRatio,0.5
+predictionSize,2000
+citizenWeight,0.5
+confidentThreshold,0.9
+numALSamplesPerIter,200
+activeLearningLabeler,local_oracle
+alSelectionCriteria,mod_entropy
+SSLType,boosted
+classNoise,"[0.25, 0.35, 0.30, 0.20, 0.25, 0.35]"
+classImbalance,"[1.0, 0.8, 0.7, 0.6, 0.4, 0.2]"
+optimizer,adam

@@ -1,0 +1,35 @@
+,SSAL_exp_3_att3_pad2_0,SSAL_exp_3_att3_pad2_1,SSAL_exp_3_att3_pad2_2,SSAL_exp_3_att3_pad2_3,SSAL_exp_3_att3_pad2_4,SSAL_exp_3_att3_pad2_5
+dbName,intel_images_5,intel_images_5,intel_images_5,intel_images_5,intel_images_5,intel_images_5
+num_trials,3,3,3,3,3,3
+maxIterations,10,10,1,10,10,1
+numLLEpochs,75,75,75,75,75,75
+fineTuneEpochs,0,0,0,0,0,0
+numDenseNeurons,512,512,512,512,512,512
+labelSmoothing,0.1,0.1,0.1,0.1,0.1,0.1
+dropoutRate,0.4,0.4,0.4,0.4,0.4,0.4
+LLLearningRate,1.00E-07,1.00E-07,1.00E-07,1.00E-07,1.00E-07,1.00E-07
+fineTuneLearningRate,0,0,0,0,0,0
+batchSize,32,32,32,32,32,32
+weightClasses,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE
+augmentImages,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+useValidation,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+earlyStoppingPatience,5,5,5,5,5,5
+writeFinalModel,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+modelType,inception,inception,inception,inception,inception,inception
+remoteDB,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+evaluationSize,2500,2500,2500,2500,2500,2500
+TVPoolSize,1000,1000,4000,1000,1000,4000
+validationRatio,0.5,0.5,0.2,0.5,0.5,0.2
+predictionSize,2000,2000,100,2000,2000,100
+citizenWeight,0.75,0.75,0.75,0.75,0.75,0.75
+confidentThreshold,0.95,0.95,0.95,0.95,0.95,0.95
+numALSamplesPerIter,100,100,0,100,100,0
+activeLearningLabeler,local_oracle,local_oracle,local_oracle,local_oracle,local_oracle,local_oracle
+alSelectionCriteria,reg_entropy,mod_entropy,mod_entropy,reg_entropy,mod_entropy,mod_entropy
+SSLType,nonboosted,boosted,none,nonboosted,boosted,none
+classNoise,"[0.45, 0.55, 0.40, 0.50, 0.35, 0.55]","[0.45, 0.55, 0.40, 0.50, 0.35, 0.55]","[0.45, 0.55, 0.40, 0.50, 0.35, 0.55]","[0.45, 0.55, 0.40, 0.50, 0.35, 0.55]","[0.45, 0.55, 0.40, 0.50, 0.35, 0.55]","[0.45, 0.55, 0.40, 0.50, 0.35, 0.55]"
+classImbalance,"[1.0, 0.4, 0.25, 0.15, 0.1, 0.05]","[1.0, 0.4, 0.25, 0.15, 0.1, 0.05]","[1.0, 0.4, 0.25, 0.15, 0.1, 0.05]","[1.0, 0.4, 0.25, 0.15, 0.1, 0.05]","[1.0, 0.4, 0.25, 0.15, 0.1, 0.05]","[1.0, 0.4, 0.25, 0.15, 0.1, 0.05]"
+optimizer,adam,adam,adam,adam,adam,adam
+trainOnCitizenLabels,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+preBalanceData,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+pseudoLabelSelectionPerClass,-2,-2,-2,-2,-2,-2

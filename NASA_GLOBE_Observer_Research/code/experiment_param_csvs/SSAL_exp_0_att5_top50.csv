@@ -1,0 +1,35 @@
+,SSAL_exp_0_att5_top50_0,SSAL_exp_0_att5_top50_1,SSAL_exp_0_att5_top50_2,SSAL_exp_0_att5_top50_3,SSAL_exp_0_att5_top50_4,SSAL_exp_0_att5_top50_5
+dbName,intel_images_4,intel_images_4,intel_images_4,intel_images_4,intel_images_4,intel_images_4
+num_trials,3,3,3,3,3,3
+maxIterations,10,10,1,10,10,1
+numLLEpochs,75,75,75,75,75,75
+fineTuneEpochs,0,0,0,0,0,0
+numDenseNeurons,512,512,512,512,512,512
+labelSmoothing,0.1,0.1,0.1,0.1,0.1,0.1
+dropoutRate,0.4,0.4,0.4,0.4,0.4,0.4
+LLLearningRate,1.00E-07,1.00E-07,1.00E-07,1.00E-07,1.00E-07,1.00E-07
+fineTuneLearningRate,0,0,0,0,0,0
+batchSize,32,32,32,32,32,32
+weightClasses,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE
+augmentImages,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+useValidation,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+earlyStoppingPatience,5,5,5,5,5,5
+writeFinalModel,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+modelType,inception,inception,inception,inception,inception,inception
+remoteDB,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+evaluationSize,2500,2500,2500,2500,2500,2500
+TVPoolSize,1000,1000,7500,1000,1000,7500
+validationRatio,0.5,0.5,0.2,0.5,0.5,0.2
+predictionSize,2000,2000,500,2000,2000,500
+citizenWeight,0.75,0.75,0.75,0.75,0.75,0.75
+confidentThreshold,0.95,0.95,0.95,0.95,0.95,0.95
+numALSamplesPerIter,100,100,0,100,100,0
+activeLearningLabeler,local_oracle,local_oracle,local_oracle,local_oracle,local_oracle,local_oracle
+alSelectionCriteria,reg_entropy,mod_entropy,mod_entropy,reg_entropy,mod_entropy,mod_entropy
+SSLType,nonboosted,boosted,none,nonboosted,boosted,none
+classNoise,"[0.25, 0.35, 0.30, 0.20, 0.25, 0.35]","[0.25, 0.35, 0.30, 0.20, 0.25, 0.35]","[0.25, 0.35, 0.30, 0.20, 0.25, 0.35]","[0.25, 0.35, 0.30, 0.20, 0.25, 0.35]","[0.25, 0.35, 0.30, 0.20, 0.25, 0.35]","[0.25, 0.35, 0.30, 0.20, 0.25, 0.35]"
+classImbalance,"[1.0, 0.8, 0.7, 0.6, 0.4, 0.2]","[1.0, 0.8, 0.7, 0.6, 0.4, 0.2]","[1.0, 0.8, 0.7, 0.6, 0.4, 0.2]","[1.0, 0.8, 0.7, 0.6, 0.4, 0.2]","[1.0, 0.8, 0.7, 0.6, 0.4, 0.2]","[1.0, 0.8, 0.7, 0.6, 0.4, 0.2]"
+optimizer,adam,adam,adam,adam,adam,adam
+trainOnCitizenLabels,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+preBalanceData,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+pseudoLabelSelectionPerClass,50,50,50,50,50,50

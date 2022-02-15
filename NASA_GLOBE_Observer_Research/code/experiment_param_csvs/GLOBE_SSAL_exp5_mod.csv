@@ -1,0 +1,37 @@
+,GLOBE_SSAL_exp_5_mod_att1
+dbName,globe_images_3
+database,GLOBE
+num_trials,1
+maxIterations,10
+numLLEpochs,75
+fineTuneEpochs,0
+numDenseNeurons,512
+labelSmoothing,0.1
+dropoutRate,0.4
+LLLearningRate,1.00E-06
+fineTuneLearningRate,0
+batchSize,32
+weightClasses,TRUE
+augmentImages,FALSE
+useValidation,TRUE
+earlyStoppingPatience,5
+writeFinalModel,FALSE
+modelType,inception
+remoteDB,TRUE
+evaluationSize,2500
+TVPoolSize,1500
+validationRatio,0.666666667
+predictionSize,10000
+citizenWeight,0.75
+confidentThreshold,0.9
+numALSamplesPerIter,150
+activeLearningLabeler,local_oracle
+alSelectionCriteria,mod_entropy
+SSLType,boosted
+classNoise,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+classImbalance,"[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]"
+optimizer,adam
+trainOnCitizenLabels,FALSE
+preBalanceData,FALSE
+pseudoLabelSelectionPerClass,0
+lossFunction,CCE

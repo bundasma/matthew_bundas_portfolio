@@ -1,0 +1,37 @@
+,MAE_exp5,MAE_exp4,MAE_exp3,MAE_exp0
+dbName,intel_images_1,intel_images_1,intel_images_1,intel_images_1
+database,intel ,intel ,intel ,intel 
+num_trials,3,3,3,3
+maxIterations,1,1,1,1
+numLLEpochs,75,75,75,75
+fineTuneEpochs,0,0,0,0
+numDenseNeurons,512,512,512,512
+labelSmoothing,0.1,0.1,0.1,0.1
+dropoutRate,0.4,0.4,0.4,0.4
+LLLearningRate,1.00E-07,1.00E-07,1.00E-07,1.00E-07
+fineTuneLearningRate,0,0,0,0
+batchSize,32,32,32,32
+weightClasses,FALSE,FALSE,FALSE,FALSE
+augmentImages,FALSE,FALSE,FALSE,FALSE
+useValidation,TRUE,TRUE,TRUE,TRUE
+earlyStoppingPatience,5,5,5,5
+writeFinalModel,FALSE,FALSE,FALSE,FALSE
+modelType,inception,inception,inception,inception
+remoteDB,TRUE,TRUE,TRUE,TRUE
+evaluationSize,2500,2500,2500,2500
+TVPoolSize,12000,5000,4000,7500
+validationRatio,0.2,0.2,0.2,0.2
+predictionSize,500,500,500,500
+citizenWeight,0.75,0.75,0.75,0.75
+confidentThreshold,0.95,0.95,0.95,0.95
+numALSamplesPerIter,0,0,0,0
+activeLearningLabeler,local_oracle,local_oracle,local_oracle,local_oracle
+alSelectionCriteria,mod_entropy,mod_entropy,mod_entropy,mod_entropy
+SSLType,none,none,none,none
+classNoise,"[0, 0, 0, 0, 0, 0]","[0.45, 0.55, 0.40, 0.50, 0.35, 0.55]","[0.45, 0.55, 0.50, 0.70, 0.45, 0.65]","[0.25, 0.35, 0.30, 0.20, 0.25, 0.35]"
+classImbalance,"[1.0, 1.0, 1.0, 1.0, 1.0, 1.0]","[1.0, 0.6, 0.40, 0.35, 0.2, 0.1]","[1.0, 0.6, 0.30, 0.15, 0.1, 0.05]","[1.0, 0.8, 0.7, 0.6, 0.4, 0.2]"
+optimizer,adam,adam,adam,adam
+trainOnCitizenLabels,TRUE,TRUE,TRUE,TRUE
+preBalanceData,TRUE,TRUE,TRUE,TRUE
+pseudoLabelSelectionPerClass,0,0,0,0
+lossFunction,MAE,MAE,MAE,MAE

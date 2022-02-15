@@ -1,0 +1,30 @@
+,intel_test
+dbName,intel_images_2
+num_trials,3
+maxIterations,1
+numLLEpochs,1
+fineTuneEpochs,0
+numDenseNeurons,1024
+labelSmoothing,0
+dropoutRate,0.3
+LLLearningRate,1.00E-04
+fineTuneLearningRate,1.00E-05
+batchSize,32
+weightClasses,TRUE
+augmentImages,TRUE
+useValidation,TRUE
+checkpointCriteria,val_categorical_accuracy
+writeFinalModel,TRUE
+remoteDB,TRUE
+TVPoolSize,500
+validationRatio,0.2
+evaluationSize,500
+predictionSize,500
+citizenWeight,1
+confidentThreshold,0.75
+numALSamplesPerIter,150
+activeLearningLabeler,local_oracle
+alSelectionCriteria,mod_entropy
+SSLType,None
+classNoise,"[0, 0, 0, 0, 0, 0]"
+classImbalance,"[1.0, 1.0, 1.0, 1.0, 1.0, 1.0]"

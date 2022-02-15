@@ -1,0 +1,32 @@
+,al_intel_test_no_aug_0,al_intel_test_no_aug_1,al_intel_test_no_aug_2
+dbName,intel_images_2,intel_images_2,intel_images_2
+num_trials,1,1,1
+maxIterations,10,10,10
+numLLEpochs,75,75,75
+fineTuneEpochs,0,0,0
+numDenseNeurons,512,512,512
+labelSmoothing,0,0,0
+dropoutRate,0.4,0.4,0.4
+LLLearningRate,1.00E-07,1.00E-07,1.00E-07
+fineTuneLearningRate,0,0,0
+batchSize,32,32,32
+weightClasses,TRUE,TRUE,TRUE
+augmentImages,FALSE,FALSE,FALSE
+useValidation,TRUE,TRUE,TRUE
+earlyStoppingPatience,6,6,6
+writeFinalModel,FALSE,FALSE,FALSE
+modelType,inception,inception,inception
+remoteDB,TRUE,TRUE,TRUE
+evaluationSize,2500,2500,2500
+TVPoolSize,1000,1000,1000
+validationRatio,0.5,0.5,0.5
+predictionSize,2500,2500,2500
+citizenWeight,0,0,0
+confidentThreshold,0,0,0
+numALSamplesPerIter,200,200,200
+activeLearningLabeler,local_oracle,local_oracle,local_oracle
+alSelectionCriteria,random,reg_entropy,mod_entropy
+SSLType,none,none,none
+classNoise,"[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]"
+classImbalance,"[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]"
+optimizer,adam,adam,adam

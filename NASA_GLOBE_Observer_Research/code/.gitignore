@@ -1,0 +1,9 @@
+*_model/*
+*.pb*
+*variables*
+*__pycache__*
+SSAL_outputs/*
+.ipynb_checkpoints/*
+scratch.py
+*.sb*
+*/tmp_ll*

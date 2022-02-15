@@ -1,0 +1,32 @@
+,sgd_intel_param_search_0,sgd_intel_param_search_1,sgd_intel_param_search_2,sgd_intel_param_search_3,sgd_intel_param_search_4,sgd_intel_param_search_5,sgd_intel_param_search_6,sgd_intel_param_search_7,sgd_intel_param_search_8,sgd_intel_param_search_9,sgd_intel_param_search_10,sgd_intel_param_search_11,sgd_intel_param_search_12,sgd_intel_param_search_13
+dbName,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2
+num_trials,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+maxIterations,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+numLLEpochs,50,50,50,50,50,50,50,50,50,50,50,50,50,50
+fineTuneEpochs,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+numDenseNeurons,512,512,512,512,512,512,512,512,512,512,512,512,512,512
+labelSmoothing,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+dropoutRate,0.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4
+LLLearningRate,0.001,0.0001,1e-05,1e-06,1e-07,1e-08,1e-09,0.001,0.0001,1e-05,1e-06,1e-07,1e-08,1e-09
+fineTuneLearningRate,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+batchSize,32,32,32,32,32,32,32,32,32,32,32,32,32,32
+weightClasses,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+augmentImages,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+useValidation,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+earlyStoppingPatience,4,4,4,4,4,4,4,4,4,4,4,4,4,4
+writeFinalModel,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+modelType,inception,inception,inception,inception,inception,inception,inception,densenet,densenet,densenet,densenet,densenet,densenet,densenet
+remoteDB,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+evaluationSize,2500,2500,2500,2500,2500,2500,2500,2500,2500,2500,2500,2500,2500,2500
+TVPoolSize,12000,12000,12000,12000,12000,12000,12000,12000,12000,12000,12000,12000,12000,12000
+validationRatio,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2
+predictionSize,32,32,32,32,32,32,32,32,32,32,32,32,32,32
+citizenWeight,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+confidentThreshold,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+numALSamplesPerIter,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+activeLearningLabeler,simulated,simulated,simulated,simulated,simulated,simulated,simulated,simulated,simulated,simulated,simulated,simulated,simulated,simulated
+alSelectionCriteria,random,random,random,random,random,random,random,random,random,random,random,random,random,random
+SSLType,none,none,none,none,none,none,none,none,none,none,none,none,none,none
+classNoise,"[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]"
+classImbalance,"[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]"
+optimizer,sgd,sgd,sgd,sgd,sgd,sgd,sgd,sgd,sgd,sgd,sgd,sgd,sgd,sgd

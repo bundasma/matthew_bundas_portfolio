@@ -1,0 +1,32 @@
+,wft_intel_param_search_0,wft_intel_param_search_1,wft_intel_param_search_2,wft_intel_param_search_3,wft_intel_param_search_4,wft_intel_param_search_5,wft_intel_param_search_6,wft_intel_param_search_7,wft_intel_param_search_8,wft_intel_param_search_9,wft_intel_param_search_10,wft_intel_param_search_11,wft_intel_param_search_12,wft_intel_param_search_13,wft_intel_param_search_14,wft_intel_param_search_15
+dbName,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2,intel_images_2
+num_trials,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+maxIterations,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+numLLEpochs,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75,75
+fineTuneEpochs,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20
+numDenseNeurons,512,512,512,512,512,512,512,512,512,512,512,512,512,512,512,512
+labelSmoothing,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+dropoutRate,0.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4,0.4
+LLLearningRate,8e-06,1e-07,8e-06,1e-07,8e-06,1e-07,8e-06,1e-07,8e-06,1e-07,8e-06,1e-07,8e-06,1e-07,8e-06,1e-07
+fineTuneLearningRate,1e-07,1e-07,1e-07,1e-07,1e-08,1e-08,1e-08,1e-08,1e-09,1e-09,1e-09,1e-09,1e-10,1e-10,1e-10,1e-10
+batchSize,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32
+weightClasses,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+augmentImages,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE
+useValidation,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+earlyStoppingPatience,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6
+writeFinalModel,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+modelType,inception,inception,inception,inception,inception,inception,inception,inception,inception,inception,inception,inception,inception,inception,inception,inception
+remoteDB,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+evaluationSize,2500,2500,2500,2500,2500,2500,2500,2500,2500,2500,2500,2500,2500,2500,2500,2500
+TVPoolSize,12000,12000,12000,12000,12000,12000,12000,12000,12000,12000,12000,12000,12000,12000,12000,12000
+validationRatio,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2
+predictionSize,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32
+citizenWeight,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+confidentThreshold,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+numALSamplesPerIter,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+activeLearningLabeler,simulated,simulated,simulated,simulated,simulated,simulated,simulated,simulated,simulated,simulated,simulated,simulated,simulated,simulated,simulated,simulated
+alSelectionCriteria,random,random,random,random,random,random,random,random,random,random,random,random,random,random,random,random
+SSLType,none,none,none,none,none,none,none,none,none,none,none,none,none,none,none,none
+classNoise,"[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]","[0, 0, 0, 0, 0, 0]"
+classImbalance,"[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]","[1, 1, 1, 1, 1, 1]"
+optimizer,adam,adam,adam,adam,adam,adam,adam,adam,adam,adam,adam,adam,adam,adam,adam,adam
