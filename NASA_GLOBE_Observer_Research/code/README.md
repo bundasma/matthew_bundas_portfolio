@@ -1,4 +1,4 @@
-This folder contains much of the code I wrote for my research project surrounding the NASA GLOBE Observer Program. Details about the project are in the folder one level higher up. 
+## This folder contains much of the code I wrote for my research project surrounding the NASA GLOBE Observer Program. Details about the project are in the folder one level higher up. 
 
 **SSALDriver.py** - Main driver of SSAL experiments. Attributes are experiment parameters/metrics/datasets. Functions facilitate semi-supervised active learning, communicating with the external postgres database. The bulk of the actual code is found in this class.
 
