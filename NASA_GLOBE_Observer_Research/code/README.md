@@ -2,15 +2,15 @@
 
 **SSAL_src/** - Contains the source files for some external functions. For the most part, they are evaluation functions used to evaluate the experiments in post.
   
-  **SSAL_classification_vis.py** - Some functions to facilitate visualizing model classifications. Displays images, their actual class, and predicted class.
+> **SSAL_classification_vis.py** - Some functions to facilitate visualizing model classifications. Displays images, their actual class, and predicted class.
   
-  **SSAL_evaluation.py** - Much of the functions actually calculating evlaution metrics, as well as some plotting.
+> **SSAL_evaluation.py** - Much of the functions actually calculating evlaution metrics, as well as some plotting.
   
-  **SSAL_models.py** - Related to the models/datassets themselves. Constructing, compliling models and datasets.
+> **SSAL_models.py** - Related to the models/datassets themselves. Constructing, compliling models and datasets.
   
-  **SSAL_plotting.py** - Some meta plotting functions to help create evaluation plots in conjunction with SSAL_evaluation.py functions.
+> **SSAL_plotting.py** - Some meta plotting functions to help create evaluation plots in conjunction with SSAL_evaluation.py functions.
   
-  **SSAL_util.py** - General purpose functions, entropy calculations, name list retrieving etc. 
+> **SSAL_util.py** - General purpose functions, entropy calculations, name list retrieving etc. 
 
 **data/** - Contains csvs containing image labels, and images themselves.
 
