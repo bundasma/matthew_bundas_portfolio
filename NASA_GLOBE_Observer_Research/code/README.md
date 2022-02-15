@@ -1,11 +1,5 @@
 ## This folder contains much of the code I wrote for my research project surrounding the NASA GLOBE Observer Program. Details about the project are in the folder one level higher up. 
 
-**SSALDriver.py** - Main driver of SSAL experiments. Attributes are experiment parameters/metrics/datasets. Functions facilitate semi-supervised active learning, communicating with the external postgres database. The bulk of the actual code is found in this class.
-
-**SSALModel.py** - Class containing the actual tensorflow models, handles training, predicting, testing etc. 
-
-**SSAL_workbench.py** - Helps automate running of many experiments, reading from a parameter csv file. 
-
 **SSAL_src/** - Contains the source files for some external functions. For the most part, they are evaluation functions used to evaluate the experiments in post.
   
   **SSAL_classification_vis.py** - Some functions to facilitate visualizing model classifications. Displays images, their actual class, and predicted class.
@@ -17,8 +11,18 @@
   **SSAL_plotting.py** - Some meta plotting functions to help create evaluation plots in conjunction with SSAL_evaluation.py functions.
   
   **SSAL_util.py** - General purpose functions, entropy calculations, name list retrieving etc. 
+
+**data/** - Contains csvs containing image labels, and images themselves.
+
+**experiment_param_csvs/** - Contains the many parameter csv files containing information for each experiment I ran.
+
+**presentaion_plots/** - Contains the plots used in my Master's final exam presentation. 
   
-  
+**SSALDriver.py** - Main driver of SSAL experiments. Attributes are experiment parameters/metrics/datasets. Functions facilitate semi-supervised active learning, communicating with the external postgres database. The bulk of the actual code is found in this class.
+
+**SSALModel.py** - Class containing the actual tensorflow models, handles training, predicting, testing etc. 
+
+**SSAL_workbench.py** - Helps automate running of many experiments, reading from a parameter csv file. 
 
 **SSAL_evaluation.ipynb** - Evaluation of specified SSAL experiments. Printing pseudolabel performance, training set composition, Active Learning selections etc.
 
