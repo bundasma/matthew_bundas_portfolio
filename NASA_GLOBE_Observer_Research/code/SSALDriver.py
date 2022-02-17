@@ -124,9 +124,7 @@ class SSALDriver:
             
             #weight to give citizen predictions when boosting confidence
             self.citizenWeight = float(param_col.citizenWeight)
-            
-            
-            
+
             #threshold for accepting predictions as "confident"
             self.confidentThreshold = float(param_col.confidentThreshold)
             
@@ -305,16 +303,16 @@ class SSALDriver:
     def connect_to_db(self):
         
         if(self.remoteDB == True):
-            host = "exp2-plab.cs.nmsu.edu"
+            host = "blank"
             dbname = self.dbName
-            user = "preeti"
-            password = "NasaEpscor01"
+            user = "blank"
+            password = "blank"
             
         else:
             host = "localhost"
             dbname = self.dbName
             user = "postgres"
-            password = "J@nuary217"
+            password = "blank"
         
         self.databaseConnection = pg.connect(
             
@@ -340,11 +338,8 @@ class SSALDriver:
     #gets all labeled data
     def get_full_labeled_data(self):
         
-        
-        
         sql_training_data = """SELECT * FROM observation WHERE official_label IS NOT NULL and partition IS DISTINCT FROM 'test' AND available=1;"""
-            
-        
+           
         training_data = psql.read_sql(sql_training_data, self.databaseConnection)
         
         return training_data
@@ -356,10 +351,8 @@ class SSALDriver:
         sql_evaluation_set = """SELECT * from observation where partition='test' AND available=1;"""
         
         evaluation_set = psql.read_sql(sql_evaluation_set, self.databaseConnection)
-        
-        
+
         evaluation_set = evaluation_set.sample(n = self.evaluationSize, replace = False)
-        
         
         self.evaluationSetDF = evaluation_set
         
@@ -374,10 +367,7 @@ class SSALDriver:
             print("do not want to inject noise in globe")
             return
         
-        
-        
         sql_update_citizen_label = """UPDATE observation SET citizen_label = %s WHERE image_name = %s;"""
-        
         
         cur = self.databaseConnection.cursor()
         
@@ -439,10 +429,7 @@ class SSALDriver:
             psycopg2.extras.execute_batch(cur,sql_update_availability, rows)
          
         self.databaseConnection.commit()
-        
-        
-                
-                
+         
                
             
     #gets all the data not in the test partition and with a dataset label
@@ -506,8 +493,6 @@ class SSALDriver:
         self.validationSetDF.to_csv(self.saveDirectory + self.name + "_og_valid_set.csv")
         df_train.to_csv(self.saveDirectory + self.name + "_og_train_set.csv")
         
-       
-        
         
     #retrieves training set from database
     def get_full_training_set(self):
@@ -523,6 +508,7 @@ class SSALDriver:
         
         return psql.read_sql(sql_valid, self.databaseConnection)
         
+        
     #sets the training set, sets meta-info about training set
     def set_current_training_set(self):
         
@@ -534,9 +520,7 @@ class SSALDriver:
         official_label_sources = self.currentTrainingSet["official_label_source"].value_counts().sort_index()
         training_set_composition = self.currentTrainingSet["official_label"].value_counts().sort_index()
         hackathon_set_composition = self.currentTrainingSet[self.currentTrainingSet["official_label_source"] == "hackathon"]["official_label"].value_counts().sort_index()
-      
- 
-        
+
         #number of manual labeled
         try:
             self.numManualLabeled = official_label_sources["manual"]
@@ -554,9 +538,7 @@ class SSALDriver:
             self.numHackathonLabeled = official_label_sources["hackathon"]
         except:
             self.numHackathonLabeled = 0
-        
-      
-        
+
         #training set composition
         self.trainingSetComposition_n = training_set_composition.values
         self.hackathonSetComposition_n = fill_in_freq_gaps(hackathon_set_composition, num_classes = self.numClasses)
@@ -604,6 +586,7 @@ class SSALDriver:
         
         self.model.trainTFModel(num_epochs = num_epochs, batch_size = batch_size)
         
+        
     #make predictions given the current model and prediction set    
     def make_predictions(self, batch_size = 32):
         
@@ -612,6 +595,7 @@ class SSALDriver:
         #calculate entropy for later, before we start messing with probabilities
         self.predictionResults["reg_entropy"] = self.predictionResults.apply(reg_ent_df_func, axis = 1, args = (self.numClasses,))
         self.predictionResults["mod_entropy"] = self.predictionResults.apply(mod_ent_df_func, axis = 1, args = (self.trainingSetComposition_n/np.sum(self.trainingSetComposition_n), self.numClasses,))        
+        
         
     #saves predictions, info about predictions before and after confidence boosting     
     def save_iteration_predictions(self):
@@ -659,6 +643,7 @@ class SSALDriver:
         
         self.predictionResults["citizen_label"] = citizen_labels
     
+                                               
     #grabs citizen labels, adds them to prediction set    
     def add_dataset_labels_to_predictions(self):
         
@@ -676,6 +661,7 @@ class SSALDriver:
         
         self.predictionResults["dataset_label"] = dataset_labels    
     
+                                               
     #grabs citizen labels, adds them to evaluation set
     def add_citizen_labels_to_evaluations(self):
         
@@ -692,6 +678,7 @@ class SSALDriver:
            
         self.evaluationPredictionResults["citizen_label"] = citizen_labels
         
+                                               
     #boosts the predictions/probabilities given citizen labels     
     def boost_row(self,row):
 
@@ -718,6 +705,7 @@ class SSALDriver:
         
         return row
         
+                                               
     #boost predictions given citizen labels    
     def boost_predictions(self):
         
@@ -727,6 +715,7 @@ class SSALDriver:
         
         self.postBoostedPredictions = self.predictionResults.copy()
         
+                                               
     #determines whether a row is confident prediction or not    
     def is_confident(self,row):
         
@@ -740,19 +729,20 @@ class SSALDriver:
             
             return 0
         
+                                               
     def max_confidence(self,row):
         
         probabilities = row.iloc[0:self.numClasses]
         
         return np.max(probabilities)
     
+                                               
     def predicted_label(self, row):
         
         probabilities = row.iloc[0:self.numClasses]
         
         return np.argmax(probabilities)
 
-        
         
     #separates confident (potentially to be pseudolabeled), unconfident (to be active learned)    
     def split_confident_unconfident(self):
@@ -767,6 +757,7 @@ class SSALDriver:
         #print("confident predictions", self.confidentPredictions.shape[0])
         #print("unconfident predictions",self.unconfidentPredictions.shape[0])
         
+                                               
     #separates confident (to be labeled), unconfident (to be active learned)    
     def select_pseudolabels(self):
         
@@ -778,8 +769,6 @@ class SSALDriver:
             
             self.pseudolabelSet = pd.DataFrame()
             self.pseudolabelSetComposition_n = np.zeros(self.numClasses)#[0,0,0,0,0,0,0,0,0,0,0]
-            
-       
             self.pseudolabelSet.to_csv(self.saveDirectory + "iteration_pseudolabels/" + self.name + "_pseudolabels_" + str(self.onIteration) + ".csv")
         
             return
@@ -846,8 +835,6 @@ class SSALDriver:
         self.pseudolabelSet.to_csv(self.saveDirectory + "iteration_pseudolabels/" + self.name + "_pseudolabels_" + str(self.onIteration) + ".csv")
         
         
-        
-        
     #determines the subset of unconfident predictions to be active learned    
     def select_al_subset(self):
 
@@ -865,7 +852,6 @@ class SSALDriver:
         self.alSubset.reset_index(inplace = True, drop = True)
         self.alSubset.to_csv(self.saveDirectory + "iteration_active_learning_selections/" + self.name + "_alset_" + str(self.onIteration) + ".csv")
 
-    
     
     #update database with confident predictions    
     def beam_up_pseudolabel_predictions(self):
@@ -895,10 +881,9 @@ class SSALDriver:
             
             cur = self.databaseConnection.cursor()
             cur.executemany(sql_update_al, rows)
-            
             self.databaseConnection.commit()
-            
             cur.close()
+                                               
         elif(self.database == "globe" or self.database == "GLOBE"):
             
             #beam up active learning selection
@@ -924,13 +909,8 @@ class SSALDriver:
                 al_queue_df = psql.read_sql(sql_al_queue, self.databaseConnection)
             
             print("al queue is empty, moving on to next step")
-                
-                
-        
-        
-        
-
- 
+              
+                                               
     #evaluates citizen accuracy given observations with actual label assigned
     def evaluate_citizen_accuracy(self):
         
@@ -947,14 +927,14 @@ class SSALDriver:
         
         self.citizenAccuracies = byclass_accuracies
     
+                                               
     #writes information about the iteration to csv                                           
     def write_iteration(self):
         
         self.iterationRow = pd.Series(index = self.evaluationColumns, dtype = object)
         #print(self.iterationRow)
         self.iterationRow["iteration"] = self.onIteration
-        
-        
+ 
         self.iterationRow["num_training_images"] = self.currentTrainingSet.shape[0]
         self.iterationRow["num_manual_labeled"] = self.numManualLabeled
         self.iterationRow["num_model_labeled"] = self.numModelLabeled
@@ -978,14 +958,11 @@ class SSALDriver:
         self.iterationRow["citizen_accuracies"] = self.citizenAccuracies
         
         self.evaluationDF = self.evaluationDF.append(self.iterationRow, ignore_index = True)
-        
         self.evaluationDF.to_csv(self.saveDirectory + self.name + "_evaluation_df.csv")
-    
     
     
     #evaluates the model given the current model, evaluation set
     def evaluate_model(self):
-        
         
         pre_eval = time.time()
         
@@ -1009,10 +986,10 @@ class SSALDriver:
         self.f1 = get_detailed_f1(y_true, y_pred)[0]
         
         post_eval = time.time()
-        
-        
+
         print("time for evaluation", post_eval - pre_eval)
     
+                                               
     #performs a few operations that need to take place at the end of iterations
     def wrap_up(self):
 
@@ -1029,13 +1006,14 @@ class SSALDriver:
 
         self.databaseConnection.close()
         
+                                               
     def do_post_iteration_adjustments(self):
         
         return
     
+                                               
     #resets the database to be ready for starting experiment                                           
     def reset_database(self):
-        
        
         cur = self.databaseConnection.cursor()
               
@@ -1059,6 +1037,7 @@ class SSALDriver:
         #pre-balance non-test data to all start with 2190 images
         self.pre_balance_train_valid()
         
+                                               
     #gets pre-balanced, raw/original label counts  
     def get_pre_balanced_label_counts(self):
         
@@ -1106,13 +1085,13 @@ class SSALDriver:
         
         self.databaseConnection.commit()    
     
+                                               
     #coordinates a full trial of an experiment, given its parameters                                           
     def run_full_trial(self):
         
         print("running full trial")
         
         print("driver name", self.name)
-
 
         print("connecting to db")
         self.connect_to_db()
@@ -1139,8 +1118,7 @@ class SSALDriver:
         while(self.evaluate_continue() == True):
             
             print("starting iteration",self.onIteration)
-            
-            
+   
             print("getting training set")
             self.set_current_training_set()
             
@@ -1161,7 +1139,6 @@ class SSALDriver:
             
             print("boosting predictions")
             self.boost_predictions()
-            
         
             print("splitting confident/unconfident")
             self.split_confident_unconfident()
@@ -1183,7 +1160,6 @@ class SSALDriver:
             
             print("evaluating model")
             self.evaluate_model()
-            
          
             print("writing iteration")
             self.write_iteration()   
@@ -1197,8 +1173,7 @@ class SSALDriver:
             
         self.wrap_up()
         
- 
-            
+
             
 #test_driver = SSALDriver()
 #test_driver.connect_to_db()
