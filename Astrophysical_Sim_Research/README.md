@@ -19,19 +19,19 @@ A major factor in the dynamics of stars as they pass through burning stages is h
 Here, I plot the nuclear energy production right around the main surface of C12-C12 burning, showing increased nuclear generation at three separate timesteps due to the enhanced fusion rates.
 
 <p align="center">
-<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/Astrophysical_Sim_Research/README_images/nuc_gen.PNG?raw=true" width="600" height="450">
+<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/Astrophysical_Sim_Research/README_images/nuc_gen.PNG?raw=true" width="1000" height="450">
 </p>
 
 This shows the abundance of the three isotopes involved in the enhanced fusion reaction, centered around the burning surface. We see less C12, as it is being burned and more Mg24 and Ne20, as they are being produced.
 
 <p align="center">
-<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/Astrophysical_Sim_Research/README_images/nuc_gen.PNG?raw=true" width="40" height="600">
+<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/Astrophysical_Sim_Research/README_images/fusion_eq.PNG?raw=true" width="1000" height="450">
 </p>
 
 Showing the strength of convection throughout the simulation. The enhanced fusion reaction rates found using the THM causes an increase in energy generation, and thus convection in the star.
 
 <p align="center">
-<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/Astrophysical_Sim_Research/README_images/nuc_gen.PNG?raw=true" width="450" height="600">
+<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/Astrophysical_Sim_Research/README_images/convection.PNG?raw=true" width="800" height="550">
 </p>
 
 In summary, we found an increase of nuclear energy production during a C12-C12 burning phase as a result of the enhanced fusion reaction rates. This undoubtedly will have an affect on a star's evolution, as the convection and abundance of several isotopes have been shown to be significantly effected in our 20,000s simulations. To fully understand what the affects would be, longer simulations would need to be conducted. This would likely have to occur in a simulation environment like MESA, as these 2-D simulations in FLASH were incredibly computationally expensive, taking hundreds of thousands of core-hours over the course of months. 
