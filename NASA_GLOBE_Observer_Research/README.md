@@ -19,7 +19,7 @@ For a detailed view of the project, I recommend checking out the slides for the 
 **Poor Images** - Roughly 2% of images are very bad quality, without land cover content, such as pictures of the sky, directly pointed at the ground or covered by thumbs.
 
 ### Semi-Supervised Active Learning Framework
-The Semi-Supervised Active Learning Framework tries to tackle the dataset challenges by solving each problem individually. We start with a small, manually labeled dataset we can trust of ~500 images and grow the training set using Semi-Supervised Learning and Active Learning. This allows us to circumvent the noisy labels, training only with images and labels we have more confidence in.
+The Semi-Supervised Active Learning Framework tries to tackle the dataset challenges by solving each problem individually. We start with a small, manually labeled dataset we can trust of ~500 images and grow the training set using semi-supervised Learning and active learning. This allows us to circumvent the noisy labels, training only with images and labels we have more confidence in.
 
 <p align="center">
 <img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/NASA_GLOBE_Observer_Research/README_images/SSAL_framework.png?raw=true" width="600" height="450">
@@ -33,7 +33,7 @@ The Semi-Supervised Active Learning Framework tries to tackle the dataset challe
 
 **Semi-Supervised Learning** - In general, semi-supervised learning involves machine learning with a dataset made up of a labeled portion and an unlabeled portion, which the  GLOBE dataset certain lines up with. We used a method called pseudolabeling, which involves having the model make predictions on unlabeled images, and turning some of the most confident predictions into labels, increasing the number of images which have labels, growing our training set size.
 
-**Prediction Confidence Boosting With Citizen Labels** - To boost the number of pseudolabels we can create during Semi-Supervised learning, we pull in the noisy citizen labels. With the formula shown below, we can combine our model's predictions and citizen predictions to create a more confident prediction, allowing more predictions to meet a confidence threshold to be used as a pseudolabel. The idea is that while the noisy citizen labels can't directly be trusted, they can still provide some supplemental information and help us out.
+**Prediction Confidence Boosting With Citizen Labels** - To boost the number of pseudolabels we can create during semi-supervised learning, we pull in the noisy citizen labels. With the formula shown below, we can combine our model's predictions and citizen predictions to create a more confident prediction, allowing more predictions to meet a confidence threshold to be used as a pseudolabel. The idea is that while the noisy citizen labels can't directly be trusted, they can still provide some supplemental information and help us out.
 
 **Active Learning** - Another way to bolster a training dataset is to have more humans provide labels. Active learning helps to be more efficient with human labor by guiding which images would be most useful to have labeled by humans. Most of active learning involves having humans label images which the model currently understands the least, derived from performing calculations on the model's predictions for given images. We used a modified entropy calculation as our selection criteria, weighting images we suspect to belong to a rare class higher than images we expect to belong to a common class. This helps us find more instances of rare classes, allowing our model to have more examples to learn from.
 
@@ -54,7 +54,7 @@ Shows the size and makeup of the training set size vs the framework iteration. T
 Shows raw accuracy of model classification by class. Compares results of directly training on the citizen labels (Naive Baseline), SSAL with no boosting and regular entropy (Baseline SSAL), SSAL with boosting and modified entropy (Modified SSAL) as well as the citizen accuracy.
 
 <p align="center">
-<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/NASA_GLOBE_Observer_Research/README_images/GLOBE_final_accs.png?raw=true" width="600" height="450">
+<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/NASA_GLOBE_Observer_Research/README_images/GLOBE_final_accs.png?raw=true" width="1000" height="650">
 </p>
 
 ### Accuracy vs Number of Manually Labeled Images
