@@ -11,6 +11,9 @@ A major factor in the dynamics of stars as they pass through burning stages is h
 
 
 
+<p align="center">
+<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/Astrophysical_Sim_Research/README_images/sim_screenshot.PNG?raw=true" width="600" height="600">
+</p>
 
 
 
