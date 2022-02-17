@@ -19,13 +19,13 @@ A major factor in the dynamics of stars as they pass through burning stages is h
 Here, I plot the nuclear energy production right around the main surface of C12-C12 burning, showing increased nuclear generation at three separate timesteps due to the enhanced fusion rates.
 
 <p align="center">
-<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/Astrophysical_Sim_Research/README_images/nuc_gen.PNG?raw=true" width="450" height="600">
+<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/Astrophysical_Sim_Research/README_images/nuc_gen.PNG?raw=true" width="600" height="450">
 </p>
 
 This shows the abundance of the three isotopes involved in the enhanced fusion reaction, centered around the burning surface. We see less C12, as it is being burned and more Mg24 and Ne20, as they are being produced.
 
 <p align="center">
-<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/Astrophysical_Sim_Research/README_images/nuc_gen.PNG?raw=true" width="450" height="600">
+<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/Astrophysical_Sim_Research/README_images/nuc_gen.PNG?raw=true" width="40" height="600">
 </p>
 
 Showing the strength of convection throughout the simulation. The enhanced fusion reaction rates found using the THM causes an increase in energy generation, and thus convection in the star.
