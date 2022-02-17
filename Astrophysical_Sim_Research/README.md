@@ -34,7 +34,7 @@ Showing the strength of convection throughout the simulation. The enhanced fusio
 <img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/Astrophysical_Sim_Research/README_images/convection.PNG?raw=true" width="800" height="550">
 </p>
 
-In summary, we found an increase of nuclear energy production during a C12-C12 burning phase as a result of the enhanced fusion reaction rates. This undoubtedly will have an affect on a star's evolution, as the convection and abundance of several isotopes have been shown to be significantly effected in our 20,000s simulations. To fully understand what the affects would be, longer simulations would need to be conducted. This would likely have to occur in a simulation environment like MESA, as these 2-D simulations in FLASH were incredibly computationally expensive, taking hundreds of thousands of core-hours over the course of months. 
+In summary, we found an increase of nuclear energy production during a C12-C12 burning phase as a result of the enhanced fusion reaction rates. This undoubtedly will have an affect on a star's evolution, as the convection and abundance of several isotopes have been shown to be significantly effected in our 20,000s simulations. To fully understand what the effects would be, longer simulations would need to be conducted. This would likely have to occur in a simulation environment like MESA, as these 2-D simulations in FLASH were incredibly computationally expensive, taking hundreds of thousands of core-hours over the course of months. 
 
 
 
