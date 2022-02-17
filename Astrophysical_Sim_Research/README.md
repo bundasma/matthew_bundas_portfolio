@@ -2,7 +2,7 @@
 
 As part of this project, I conducted astrophysical simulations to explore newly theorized reaction rates for a specific fusion reaction occuring in stars. 
 
-For an overview of the project, check out the poster I created. For a more detailed look check out my paper or presentation I made as part of my senior thesis.
+For an overview of the project, check out the poster I included in this repo. For a more detailed look check out my paper or presentation I made as part of my senior thesis.
 
 My favorite result of the project is a movie visualizing the simulation showing the velocity of material in roughly the inner third of the star. On the left is the simulation using the old/traditional C12/C12 fusion reaction rate, and on the right is the enhanced newly theorized reaction rates. It does a nice job showing the increased energy production due to more C12/C12 fusion. To construct this movie, I created a series of images at interval time steps using log files and python, and stiched them together using FFmpeg: https://drive.google.com/file/d/1Dik8lKlVvJzZRvcd24woERJ2HwcVFAui/view?usp=sharing
 
