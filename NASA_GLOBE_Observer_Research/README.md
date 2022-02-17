@@ -47,7 +47,7 @@ Overall, with the Semi-Supervised Active Learning Framework, we were able to out
 Shows the size and makeup of the training set size vs the framework iteration. The modified (citizen boosted) SSAL Framework has a much larger training set size.
 
 <p align="center">
-<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/NASA_GLOBE_Observer_Research/README_images/train_set_growth.PNG?raw=true" width="600" height="450">
+<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/NASA_GLOBE_Observer_Research/README_images/train_set_growth.PNG?raw=true" width="1200" height="450">
 </p>
 
 ### Accuracy
