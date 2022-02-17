@@ -31,11 +31,20 @@ The Semi-Supervised Active Learning Framework tries to tackle the dataset challe
 
 **Transfer Learning** - A major field of research is creating the best CNN to classify the ImageNet dataset, made up of millions of images. These models have learned the features useful in general image classification and can be fine-tuned for a specific domain. In our case, we used Google's Inception-V3 and adapted it to classify our images' content using fully connected layers on the end of the network.
 
+<p align="center">
+<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/NASA_GLOBE_Observer_Research/README_images/transfer_learning.PNG?raw=true" width="1000" height="450">
+</p>
+
 **Semi-Supervised Learning** - In general, semi-supervised learning involves machine learning with a dataset made up of a labeled portion and an unlabeled portion, which the  GLOBE dataset certain lines up with. We used a method called pseudolabeling, which involves having the model make predictions on unlabeled images, and turning some of the most confident predictions into labels, increasing the number of images which have labels, growing our training set size.
 
 **Prediction Confidence Boosting With Citizen Labels** - To boost the number of pseudolabels we can create during semi-supervised learning, we pull in the noisy citizen labels. With the formula shown below, we can combine our model's predictions and citizen predictions to create a more confident prediction, allowing more predictions to meet a confidence threshold to be used as a pseudolabel. The idea is that while the noisy citizen labels can't directly be trusted, they can still provide some supplemental information and help us out.
 
 **Active Learning** - Another way to bolster a training dataset is to have more humans provide labels. Active learning helps to be more efficient with human labor by guiding which images would be most useful to have labeled by humans. Most of active learning involves having humans label images which the model currently understands the least, derived from performing calculations on the model's predictions for given images. We used a modified entropy calculation as our selection criteria, weighting images we suspect to belong to a rare class higher than images we expect to belong to a common class. This helps us find more instances of rare classes, allowing our model to have more examples to learn from.
+
+<p align="center">
+<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/NASA_GLOBE_Observer_Research/README_images/entropy.PNG?raw=true" width="1000" height="450">
+</p>
+
 
 **Iteration** - Starting with the small, manually labeled subset, we perform a set number (~10) iterations of the framework. In each iteration we train the model on the currently available training set, make predictions on unlabeled images and perform semi-supervised and active learning to grow our training set. Finally, we train our model on the final training set and evaluate its performance.
 
