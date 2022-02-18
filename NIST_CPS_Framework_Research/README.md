@@ -57,14 +57,14 @@ Another major contribution I made to this project was assisting in the completio
 
 
 #### Reason about an Ontology and Export as CSV
-Performing reasoning queries to determine concern satisfaction in the CPS Framework.
+Performing reasoning queries to determine concern satisfaction in the CPS Framework. Dr. Thanh Ngyuen developed the shwon CPS Reasoner. I developed the support for exporting results as a CSV for future visualization. 
 
 <p align="center">
 <img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/NIST_CPS_Framework_Research/README_images/reasoner.png?raw=true" width="600" height="400">
 </p>
 
 #### Visualize in Tableau
-A cleaner, easier to understand visualization than the editor can provide, indicating which concerns are satisfied and which are unsatisfied.
+A cleaner, easier to understand visualization than the editor can provide, indicating which concerns are satisfied and which are unsatisfied. Visualization developed by Amanda Bailey from SJU. I worked with her to develop a file format, and method of creation to serve as the source of visualizations. 
 
 <p align="center">
 <img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/NIST_CPS_Framework_Research/README_images/CPS_tree.png?raw=true" width="600" height="400">
