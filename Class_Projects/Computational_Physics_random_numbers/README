@@ -1,0 +1,7 @@
+Everything for my project is in bundas_480_project.ipynb and in tests.py
+My code,analysis and graphs are all in these documents. The jupyter notebook
+has everything needed for the writeup/analysis as well as the running of the tests
+themselves. tests.py is used by this jupyter notebook and stores all of the
+random number generators I used as well as the tests I used to analyze These
+generators. No fancy libraries were used. I used ffmpeg to make the movies but
+saved the good movies I made within the good_movies directory.
