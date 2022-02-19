@@ -9,7 +9,7 @@ My name is Matthew Bundas, I recently finished up my Master's Degree in Computer
 
 
 ## NASA GLOBE Observer Deep Learning
-Developed a novel deep learning framework to classify content of citizen-submitted images for one of NASA's global landcover programs, GLOBE Observer.
+Developed a novel deep learning framework to classify content of citizen-submitted images for one of NASA's global landcover programs, GLOBE Observer. My solutions outperformed citizen classification by a significant margin.
 
 <p align="center">
 <img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/NASA_GLOBE_Observer_Research/README_images/SSAL_framework.png?raw=true" width="600" height="450">
@@ -17,7 +17,7 @@ Developed a novel deep learning framework to classify content of citizen-submitt
 
 
 ## Astrophysical Simulations
-Ran and analyzed astrophysical simulations of high-mass stars to explore the potential impacts of varying fusion reaction rates.
+Ran and analyzed astrophysical simulations of high-mass stars to explore the potential impacts of varying fusion reaction rates. This work contributed to my senior thesis and I completed poster presentations at several universities. 
 
 <p align="center">
 <img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/Astrophysical_Sim_Research/README_images/sim_screenshot.PNG?raw=true" width="600" height="600">
@@ -25,7 +25,7 @@ Ran and analyzed astrophysical simulations of high-mass stars to explore the pot
 
 
 ## National Institute of Standards and Technology (NIST) Cyber-physical System (CPS) Framework
-Worked on various projects surrounding NIST's CPS Framework, including creating my own application and incorporating AI into the CPS Framework.
+Worked on various projects surrounding NIST's CPS Framework, including creating my own application and incorporating AI into the CPS Framework. My group and I published four papers and completed two tutorials.
 
 <p align="center">
 <img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/NIST_CPS_Framework_Research/README_images/ontology_editor.png?raw=true" width="1000" height="600">
@@ -33,7 +33,7 @@ Worked on various projects surrounding NIST's CPS Framework, including creating 
 
 
 ## Michigan State University Observatory
-End-to-End operation of MSU's campus observatory, including telesope operation and data reduction.
+End-to-End operation of MSU's campus observatory, including telesope operation and data reduction. Over the course of more than two years, I completed 1,000+ observations, and was promoted to a position where I trained my peers.
 
 
 
