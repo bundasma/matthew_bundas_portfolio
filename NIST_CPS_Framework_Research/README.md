@@ -70,13 +70,4 @@ A cleaner, easier to understand visualization than the editor can provide, indic
 <img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/NIST_CPS_Framework_Research/README_images/CPS_tree.png?raw=true" width="600" height="400">
 </p>
 
-papers
-
-screenshot of GUI
-
-code
-
-documentation
-
-tableau vis?
 
