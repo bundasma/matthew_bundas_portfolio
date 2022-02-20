@@ -36,7 +36,7 @@ Worked on various projects surrounding NIST's CPS Framework, including creating 
 End-to-End operation of MSU's campus observatory, including telesope operation and data reduction. Over the course of more than two years, I completed 1,000+ observations, and was promoted to a position where I trained my peers.
 
 <p align="center">
-<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/MSU_Observatory/README_images/starfield_x.jpg?raw=true" width="1000" height="600">
+<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/MSU_Observatory/README_images/starfield.png?raw=true" width="1000" height="600">
 </p>
 
 
