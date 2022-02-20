@@ -42,3 +42,13 @@ Science Images for the MSU Observatory were typically 60-180 second exposures of
 
 ## Data Reduction
 Data reduction required following several steps involving AstroImageJ and python to ultimately produce a text file showing the magnitude change of a variable star over the course of the observing period. First, the calibration frames were applied to the science images to remove as much systematic bias as possible. Following calibration, photometry was performed by stacking the images so that stars within them were located in the same positions and then obtaining magnitude measurements using comparison stars of known magnitude. Finally, python scripts were used to graph and validate the data and organize the data according to specifications provided by AAVSO and others. 
+
+
+<p align="center">
+<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/MSU_Observatory/README_images/reduction.png?raw=true" width="600" height="450">
+</p>
+
+<p align="center">
+<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/MSU_Observatory/README_images/measurements.png?raw=true" width="600" height="450">
+</p>
+
