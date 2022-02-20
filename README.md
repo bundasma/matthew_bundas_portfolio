@@ -17,7 +17,7 @@ Developed a novel deep learning framework to classify content of citizen-submitt
 
 
 ## Astrophysical Simulations with FLASH
-Conducted simulations using FLASH code and MSU's supercom and analyzed astrophysical simulations of high-mass stars to explore the potential impacts of varying fusion reaction rates. This work contributed to my senior thesis and I completed poster presentations at several universities. 
+Conducted and analyzed astrophysical simulations of high-mass stars to explore the potential impacts of varying fusion reaction rates. I used the open source code, FLASH and MSU's High Performance Computing Center to run them and python to investigate and visualize them in post. This work contributed to my senior thesis. 
 
 <p align="center">
 <img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/Astrophysical_Sim_Research/README_images/sim_screenshot.PNG?raw=true" width="600" height="600">
@@ -35,8 +35,14 @@ Worked on various projects surrounding NIST's CPS Framework, including creating 
 ## Michigan State University Observatory
 End-to-End operation of MSU's campus observatory, including telesope operation and data reduction. Over the course of more than two years, I completed 1,000+ observations, and was promoted to a position where I trained my peers.
 
+<p align="center">
+<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/MSU_Observatory/README_images/starfield_x.jpg?raw=true" width="1000" height="600">
+</p>
+
 
 
 
 ## Class Projects
 Deep learning classification of astronomical objects, random number generation, computational statistics regarding American football rushing plays and SQLite performance testing among many others. 
+
+
