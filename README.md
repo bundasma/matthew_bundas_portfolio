@@ -26,7 +26,7 @@ Conducted and analyzed astrophysical simulations of high-mass stars to explore t
 Worked on various projects surrounding NIST's CPS Framework, including creating my own application and incorporating AI into the CPS Framework. My group and I published four papers and completed two tutorials.
 
 <p align="center">
-<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/NIST_CPS_Framework_Research/README_images/ontology_editor.png?raw=true" width="1000" height="600">
+<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/NIST_CPS_Framework_Research/README_images/ontology_editor.png?raw=true" width="1000" height="500">
 </p>
 
 
