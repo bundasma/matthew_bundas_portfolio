@@ -16,8 +16,8 @@ Developed a novel deep learning framework to classify content of citizen-submitt
 </p>
 
 
-## Astrophysical Simulations
-Ran and analyzed astrophysical simulations of high-mass stars to explore the potential impacts of varying fusion reaction rates. This work contributed to my senior thesis and I completed poster presentations at several universities. 
+## Astrophysical Simulations with FLASH
+Conducted simulations using FLASH code and MSU's supercom and analyzed astrophysical simulations of high-mass stars to explore the potential impacts of varying fusion reaction rates. This work contributed to my senior thesis and I completed poster presentations at several universities. 
 
 <p align="center">
 <img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/Astrophysical_Sim_Research/README_images/sim_screenshot.PNG?raw=true" width="600" height="600">
