@@ -6,7 +6,7 @@ My name is Matthew Bundas, I recently finished up my Master's Degree in Computer
 
 
 
-## NASA GLOBE Observer Deep Learning
+## Deep/Machine Learning - NASA GLOBE Observer
 Developed a novel deep learning framework to classify content of citizen-submitted images for one of NASA's global landcover programs, GLOBE Observer. My solutions outperformed citizen classification by a significant margin.
 
 <p align="center">
