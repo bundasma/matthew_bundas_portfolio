@@ -1,7 +1,7 @@
 
 # Matthew Bundas Portfolio - matthewbundas@gmail.com
 
-My name is Matthew Bundas, I recently finished up my Master's Degree in Computer Science at New Mexico State University in late 2021 after obtaining a Bachelor's in Astrophysics from Michigan State University in 2019. During my time in college, I primarily worked as a Research Assistant where I contributed to a range of projects. Below is a peak at some of my projects, with more thorough details and code for each project in their own directories.
+My name is Matthew Bundas, I recently finished up my Master's Degree in Computer Science at New Mexico State University in late 2021 after obtaining a Bachelor's in Astrophysics from Michigan State University in 2019. During my time in college, I primarily worked as a Research Assistant where I contributed to a range of projects. Below is a peak at some of my projects, with more thorough details and code for each project in their own directories. I have also included my general resume in this repository.
 
 
 
