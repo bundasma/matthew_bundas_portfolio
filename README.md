@@ -1,4 +1,4 @@
-# matthew_bundas_portfolio
+# Matthew Bundas Portfolio
 
 #include picture, contact info
 
