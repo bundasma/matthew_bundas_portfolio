@@ -11,7 +11,7 @@ Every observing night, before taking science images, calibration frames were tak
 Bias frames were obtained by taking images with the shortest exposure time possible and the aperature closed. This helped capture the baseline pixel values, which could be subtracted off of the science images to obtain an image that better represents the light coming from stars. 
 
 <p align="center">
-<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/MSU_Observatory/README_images/bias.png?raw=true" width="600" height="450">
+<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/MSU_Observatory/README_images/bias.png?raw=true" width="450" height="450">
 </p>
 
 
@@ -19,7 +19,7 @@ Bias frames were obtained by taking images with the shortest exposure time possi
 Darks were obtained by taking an image with the same exposure length as the science images and the aperature closed. Darks help measure the sort of random noise pixels might have, where they register photons of light, despite no light reaching the camera. Similar to Bias frames, Darks were subtracted off of science images to remove random noise associated with individual pixels.
 
 <p align="center">
-<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/MSU_Observatory/README_images/dark.png?raw=true" width="600" height="450">
+<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/MSU_Observatory/README_images/dark.png?raw=true" width="450" height="450">
 </p>
 
 
@@ -35,7 +35,7 @@ Flats were taken just after sunset, where the camera was exposed to enough unifo
 Science Images for the MSU Observatory were typically 60-180 second exposures of which we'd try to take as many as possible over the course of the night. In most cases, variable stars were our targets and required data spanning as many periods as possible. We would find our targets by instructing the telescope to point at the provided coordinates, and zero in on them using star charts to help make intelligent adjustments. 
 
 <p align="center">
-<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/MSU_Observatory/README_images/starfield.png?raw=true" width="600" height="450">
+<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/MSU_Observatory/README_images/starfield.png?raw=true" width="450" height="450">
 </p>
 
 
@@ -45,10 +45,10 @@ Data reduction required following several steps involving AstroImageJ and python
 
 
 <p align="center">
-<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/MSU_Observatory/README_images/reduction.png?raw=true" width="600" height="450">
+<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/MSU_Observatory/README_images/reduction.png?raw=true" width="450" height="450">
 </p>
 
 <p align="center">
-<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/MSU_Observatory/README_images/measurements.png?raw=true" width="600" height="450">
+<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/MSU_Observatory/README_images/measurements.png?raw=true" width="450" height="450">
 </p>
 
