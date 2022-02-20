@@ -49,6 +49,6 @@ Data reduction required following several steps involving AstroImageJ and python
 </p>
 
 <p align="center">
-<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/MSU_Observatory/README_images/measurements.png?raw=true" width="450" height="450">
+<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/MSU_Observatory/README_images/measurements.png?raw=true" width="650" height="450">
 </p>
 
