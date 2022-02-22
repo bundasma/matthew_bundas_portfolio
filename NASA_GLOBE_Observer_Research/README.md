@@ -39,6 +39,11 @@ The Semi-Supervised Active Learning Framework tries to tackle the dataset challe
 
 **Prediction Confidence Boosting With Citizen Labels** - To boost the number of pseudolabels we can create during semi-supervised learning, we pull in the noisy citizen labels. With the formula shown below, we can combine our model's predictions and citizen predictions to create a more confident prediction, allowing more predictions to meet a confidence threshold to be used as a pseudolabel. The idea is that while the noisy citizen labels can't directly be trusted, they can still provide some supplemental information and help us out.
 
+<p align="center">
+<img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/NASA_GLOBE_Observer_Research/README_images/boosting.PNG?raw=true" width="900" height="450">
+</p>
+
+
 **Active Learning** - Another way to bolster a training dataset is to have more humans provide labels. Active learning helps to be more efficient with human labor by guiding which images would be most useful to have labeled by humans. Most of active learning involves having humans label images which the model currently understands the least, derived from performing calculations on the model's predictions for given images. We used a modified entropy calculation as our selection criteria, weighting images we suspect to belong to a rare class higher than images we expect to belong to a common class. This helps us find more instances of rare classes, allowing our model to have more examples to learn from.
 
 <p align="center">
