@@ -24,7 +24,7 @@ Darks were obtained by taking an image with the same exposure length as the scie
 
 
 ### Flats
-Flats were taken just after sunset, where the camera was exposed to enough uniform light to be just under saturation values. Because the light in reality is uniform, differing values in pixel counts revealed differing rates pixels registered counts due to error in pixels or filtered used. These frames could be normalized to have a mean value of ~1 and then the science images could be divided by the flat images to remove systematic counting bias.
+Flats were taken just after sunset, where the camera was exposed to enough uniform light to be just under saturation values. Because the light in reality is uniform, differing values in pixel counts revealed differing rates pixels registered counts due to error in pixels or light filter used. These frames could be normalized to have a mean value of ~1 and then the science images could be divided by the flat images to remove systematic counting bias.
 
 <p align="center">
 <img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/MSU_Observatory/README_images/flat.png?raw=true" width="600" height="450">
@@ -32,7 +32,7 @@ Flats were taken just after sunset, where the camera was exposed to enough unifo
 
 
 ## Science Images 
-Science Images for the MSU Observatory were typically 60-180 second exposures of which we'd try to take as many as possible over the course of the night. In most cases, variable stars were our targets and required data spanning as many periods as possible. We would find our targets by instructing the telescope to point at the provided coordinates, and zero in on them using star charts to help make intelligent adjustments. 
+Science images for the MSU Observatory were typically 60-180 second exposures of which we'd try to take as many as possible over the course of the night. In most cases, variable stars were our targets and required data spanning as many periods as possible. We would find our targets by instructing the telescope to point at the provided coordinates, and zero in on them using star charts to help make intelligent adjustments. 
 
 <p align="center">
 <img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/MSU_Observatory/README_images/starfield.png?raw=true" width="450" height="450">
