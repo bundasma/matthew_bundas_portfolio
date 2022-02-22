@@ -19,7 +19,7 @@ Created linear models using R to explore what factors impact a rushing play and 
 <img src="https://github.com/bundasma/matthew_bundas_portfolio/blob/main/Class_Projects/README_images/comp_stats.PNG?raw=true" width="600" height="450">
 </p>
 
-### Database Management - Benchmarking and presentation on SQLite, the world's most consumer-used database management system
+### Database Management - Benchmarking and presentation on SQLite
 With a partner, I collected information about SQLite, comparing its uses and features to MySQL. We also performed experiments to directly compare the speed of SQLite and MySQL with and without indexes.
 
 
